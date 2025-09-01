@@ -1613,6 +1613,7 @@ li .footer-link {
 }
 
 footer a {
+  font-family: "Noto Sans JP", sans-serif;
   padding-left: 20px;
   display: inline-block;
   margin: 2px;
