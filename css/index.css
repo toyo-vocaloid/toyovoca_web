@@ -7,6 +7,13 @@
   font-style: normal;
 }
 
+.noto-sans-jp {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -110,6 +117,7 @@ li a {
 }
 
 #header-menu .link {
+  font-family: "Noto Sans JP", sans-serif;
   position: relative;
   display: block;
   text-decoration: none;
