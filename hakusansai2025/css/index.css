@@ -163,7 +163,7 @@ body {
 }
 
 .l .pillar-charcter {
-  writing-mode: sideways-lr;
+  writing-mode: vertical-lr;
   margin: 1rem 1rem 1rem 0;
 }
 
