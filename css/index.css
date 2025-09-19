@@ -757,6 +757,10 @@ main {
   color: #3190e7;
 }
 
+#customers-testimonials {
+  touch-action: pan-y;
+}
+
 #customers-testimonials .item {
   text-align: center;
   padding: 20px;
@@ -810,7 +814,9 @@ main {
 .testimonials {
   padding-top: 80px;
   overflow-x: hidden;
+  overflow-y: hidden;
   width: 100%;
+  touch-action: pan-y;
 }
 
 .container {
@@ -1003,15 +1009,32 @@ main {
   box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition: 0.3s;
+  animation: bounce 2s infinite;
+  position: relative;
+  overflow: hidden;
 }
 
-@media (hover: hover) {
-  .more button:hover {
-    background-color: #fff;
-    color: #444;
-    transform: scale(1.1);
-    border: solid 8px #444;
-  }
+.more button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-45deg);
+  transition: all 0.5s;
+}
+
+.more button:hover::before {
+  left: 150%;
+}
+
+.more button:hover {
+  background-color: #fff;
+  color: #444;
+  transform: scale(1.1);
+  border: solid 8px #444;
 }
 
 .content-2 {
@@ -1678,4 +1701,45 @@ footer p {
 footer .footer-link:hover,
 .sns-logo:hover {
   transform: scale(1.2);
+}
+
+.speech-bubble,
+.image-box {
+  cursor: pointer;
+}
+
+.click-hint {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10px;
+  color: #555;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }
