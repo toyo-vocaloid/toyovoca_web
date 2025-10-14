@@ -464,9 +464,8 @@ body {
   width: 100%;
 }
 
-.timetable img {
-  width: 50%;
-  margin: 0 25% 0 25%;
+.TVC-image img {
+  width: 100%;
 }
 
 .project-index {
@@ -764,13 +763,18 @@ body {
   }
 }
 
-.dot-crypto {
-  width: 100%;
+.dot-all {
+  width: 70%;
+  margin: 0 15% 0 15%;
 }
 
 .caution {
-  width: 50%;
-  margin: 0 25% 0 25%;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.caution-ticket {
+  width: 100%;
 }
 
 footer {
