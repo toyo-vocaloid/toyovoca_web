@@ -44,7 +44,7 @@ body {
   color: black;
   background-color: white;
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 1.2em;
   position: relative;
   font-family: "DotGothic16", sans-serif;
   letter-spacing: 3px;
@@ -84,7 +84,7 @@ body {
 
 @media (max-width: 768px) {
   #tabcontrol a {
-    font-size: 1.2em;
+    font-size: 0.9em;
   }
 }
 
